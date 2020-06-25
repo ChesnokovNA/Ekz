@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="sr" Class="DataClasses4DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DNS\SQLEXPRESS;Initial Catalog=sr;Integrated Security=True" SettingsObjectName="Ekz.Properties.Settings" SettingsPropertyName="srConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.contract" Member="contract">
+    <Type Name="contract">
+      <Column Name="id_contr" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="datazakl" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="id_kl" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_user" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_izd" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

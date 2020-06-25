@@ -1,0 +1,25 @@
+﻿<Window x:Class="Ekz.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ekz"
+        mc:Ignorable="d"
+        Title="Window2" Height="315" Width="250" ResizeMode="CanMinimize">
+    <Canvas>
+        <TextBlock Text="Регистрация" FontSize="18" Canvas.Left="57" Canvas.Top="18" FontWeight="Bold"/>
+        <TextBlock Text="ФИО" FontSize="16" Canvas.Left="10" Canvas.Top="58" FontWeight="Bold"/>
+        <TextBox x:Name="tbFIOReg" Width="150" FontSize="16" Canvas.Left="77" Canvas.Top="58"/>
+        <TextBlock Text="Логин" FontSize="16" Canvas.Left="10" Canvas.Top="103" FontWeight="Bold"/>
+        <TextBox x:Name="tbLogReg" Width="150" FontSize="16" Canvas.Left="77" Canvas.Top="103"/>
+        <TextBlock Text="Пароль" FontSize="16" Canvas.Left="10" Canvas.Top="148" FontWeight="Bold"/>
+        <TextBox x:Name="tbPassReg" Width="150" FontSize="16" Canvas.Left="77" Canvas.Top="148"/>
+        <TextBlock Text="Роль" FontSize="16" Canvas.Left="10" Canvas.Top="193" FontWeight="Bold"/>
+        <ComboBox x:Name="tbRolReg" Width="150" FontSize="16" Canvas.Left="77" Canvas.Top="193">
+            <ComboBoxItem Content="Администратор"/>
+            <ComboBoxItem Content="Менеджер"/>
+        </ComboBox>
+        <Button x:Name="btZareg" Content="Зарегистрироваться" FontWeight="Bold" FontSize="16" Canvas.Left="10" Canvas.Top="230" Width="217" Height="40" Click="btZareg_Click"/>
+        <Button Content="Назад" FontWeight="Bold" FontSize="16" Canvas.Top="230" Canvas.Right="20" Width="217" Height="40" Click="btnBack_Click" Canvas.Left="10" x:Name="btnBack" Visibility="Hidden" />
+    </Canvas>
+</Window>

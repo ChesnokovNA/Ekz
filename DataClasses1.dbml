@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="sr" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DNS\SQLEXPRESS;Initial Catalog=sr;Integrated Security=True" SettingsObjectName="Ekz.Properties.Settings" SettingsPropertyName="srConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.users" Member="users">
+    <Type Name="users">
+      <Column Name="id_user" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="lod_user" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="pas_user" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="rol_user" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="fio_user" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
